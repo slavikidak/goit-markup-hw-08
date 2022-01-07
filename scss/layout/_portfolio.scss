@@ -1,0 +1,70 @@
+.portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    flex-basis: calc(100% / 3);
+
+    margin-top: 20px;
+    margin-left: -30px;
+  }
+  &__item {
+    margin-top: 30px;
+    margin-left: 30px;
+    &-description {
+      padding: 20px 24px;
+
+      border-left: 1px solid #eeeeee;
+      border-right: 1px solid #eeeeee;
+      border-bottom: 1px solid #eeeeee;
+    }
+    &-name {
+      font-size: 18px;
+      line-height: 2;
+      letter-spacing: 0.06em;
+      color: var(--secondary-text-color);
+    }
+    &-text {
+      margin-top: 4px;
+
+      font-size: 16px;
+      line-height: 1.88;
+    }
+  }
+  &__link {
+    display: block;
+    transition: box-shadow var(--retiming);
+    &:hover,
+    &:focus {
+      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+        0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+  }
+  &__thumb {
+    position: relative;
+    overflow: hidden;
+    &-text {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+
+      bottom: -100%;
+      padding: 63px 24px;
+
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 1.56;
+
+      color: var(--white-color);
+      background-color: rgba(33, 150, 243, 0.9);
+
+      transition: bottom var(--retiming);
+    }
+  }
+}
+
+.portfolio__link:hover .portfolio__thumb-text {
+  bottom: 0;
+}

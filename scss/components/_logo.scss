@@ -1,0 +1,13 @@
+.logo {
+  font-family: var(--logo-font);
+  font-size: 26px;
+  line-height: 1.15;
+  font-weight: 700;
+  color: var(--accent-color);
+  &__studio {
+    color: #000000;
+  }
+  &__studio--inverted {
+    color: var(--white-color);
+  }
+}
