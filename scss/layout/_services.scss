@@ -1,4 +1,8 @@
 .services {
+  display: none;
+  @media screen and (min-width: 780px) {
+    display: block;
+  }
   padding-top: 94px;
   padding-bottom: 94px;
   &__items {

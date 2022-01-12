@@ -46,7 +46,7 @@ address {
 }
 
 .container {
-  width: 1200px;
+  max-width: 480px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
@@ -54,4 +54,6 @@ address {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }

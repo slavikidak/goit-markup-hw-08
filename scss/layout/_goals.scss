@@ -1,13 +1,12 @@
 .goals {
-  padding-top: 94px;
-  padding-bottom: 0;
+  padding-top: 60px;
+  padding-bottom: 60px;
 
   color: var(--secondary-text-color);
   &__items {
-    display: flex;
   }
   &__item {
-    width: 270px;
+    width: 100%;
     &:not(:last-child) {
       margin-right: 30px;
     }
@@ -18,7 +17,6 @@
 
       background-color: #f5f4fa;
       border-radius: 4px;
-      color: orange;
       background-image: url(../images/icons/antenna.svg);
       background-repeat: no-repeat;
       background-position: center;
@@ -31,10 +29,10 @@
 
       background-color: #f5f4fa;
       border-radius: 4px;
-      color: orange;
       background-image: url(../images/icons/clock.svg);
       background-repeat: no-repeat;
       background-position: center;
+      margin-top: 30px;
       margin-bottom: 30px;
     }
 
@@ -45,10 +43,10 @@
 
       background-color: #f5f4fa;
       border-radius: 4px;
-      color: orange;
       background-image: url(../images/icons/diagram.svg);
       background-repeat: no-repeat;
       background-position: center;
+      margin-top: 30px;
       margin-bottom: 30px;
     }
 
@@ -59,10 +57,10 @@
 
       background-color: #f5f4fa;
       border-radius: 4px;
-      color: orange;
       background-image: url(../images/icons/astronaut.svg);
       background-repeat: no-repeat;
       background-position: center;
+      margin-top: 30px;
       margin-bottom: 30px;
     }
   }
