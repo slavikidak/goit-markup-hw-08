@@ -3,9 +3,9 @@
   padding-bottom: 94px;
   &__items {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     margin-top: 50px;
-    flex-basis: calc(100% / 3);
 
     margin-top: 20px;
     margin-left: -30px;
@@ -13,6 +13,14 @@
   &__item {
     margin-top: 30px;
     margin-left: 30px;
+
+    @media screen and (min-width: 768px) {
+      flex-basis: calc(100% / 2 - 30px);
+    }
+
+    @media screen and (min-width: 1200px) {
+      flex-basis: calc(100% / 3 - 30px);
+    }
     &-description {
       padding: 20px 24px;
 

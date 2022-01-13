@@ -11,7 +11,15 @@
     margin-left: 30px;
     margin-top: 30px;
     flex-basis: calc(100% / 2 - 2 * 15px);
-    @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 768px) {
+    .partners__item {
+      flex-basis: calc(100% / 3 - 2 * 15px);
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    .partners__item {
+      flex-basis: calc(100% / 6 - 30px);
     }
   }
 

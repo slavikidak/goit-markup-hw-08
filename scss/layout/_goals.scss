@@ -4,12 +4,33 @@
 
   color: var(--secondary-text-color);
   &__items {
+    @media screen and (max-width: 1199px) {
+      margin-top: -30px;
+    }
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      margin-left: -30px;
+    }
   }
   &__item {
     width: 100%;
-    &:not(:last-child) {
-      margin-right: 30px;
+    @media screen and (max-width: 1199px) {
+      margin-top: 30px;
     }
+    @media screen and (min-width: 768px) {
+      flex-basis: calc(100% / 2 - 2 * 15px);
+      margin-left: 30px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      flex-basis: calc(100% / 4 - 30px);
+      margin-left: 30px;
+    }
+
     &:nth-child(1)::before {
       display: block;
       content: "";
@@ -32,7 +53,6 @@
       background-image: url(../images/icons/clock.svg);
       background-repeat: no-repeat;
       background-position: center;
-      margin-top: 30px;
       margin-bottom: 30px;
     }
 
@@ -46,7 +66,6 @@
       background-image: url(../images/icons/diagram.svg);
       background-repeat: no-repeat;
       background-position: center;
-      margin-top: 30px;
       margin-bottom: 30px;
     }
 
@@ -60,7 +79,6 @@
       background-image: url(../images/icons/astronaut.svg);
       background-repeat: no-repeat;
       background-position: center;
-      margin-top: 30px;
       margin-bottom: 30px;
     }
   }
