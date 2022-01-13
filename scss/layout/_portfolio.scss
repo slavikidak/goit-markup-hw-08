@@ -53,6 +53,7 @@
   &__thumb {
     position: relative;
     overflow: hidden;
+    z-index: -1;
     &-text {
       position: absolute;
       width: 100%;

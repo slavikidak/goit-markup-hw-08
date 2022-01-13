@@ -1,0 +1,114 @@
+@media screen and (max-width: 767px) {
+  .mobile-menu {
+    &__container {
+      position: fixed;
+      padding: 48px 40px;
+      top: -100%;
+      width: 100%;
+      height: 100%;
+      background-color: var(--white-color);
+
+      font-size: 40px;
+      line-height: 1.16;
+      font-weight: 500;
+      letter-spacing: 0.02em;
+
+      transition: top var(--retiming);
+    }
+    &.is-open &__container {
+      top: 0;
+    }
+    &__item:not(:last-child) {
+      margin-bottom: 32px;
+    }
+    &__link:hover,
+    &__link:focus {
+      color: var(--accent-color);
+    }
+    &__phone {
+      font-size: 34px;
+      line-height: 1.18;
+
+      color: var(--accent-color);
+    }
+    &__mail {
+      font-size: 24px;
+      line-height: 1.17;
+    }
+    &__contacts {
+      position: absolute;
+      top: 50%;
+    }
+  }
+}
+
+.burger-button {
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+  margin-left: auto;
+  top: 15px;
+  right: 30px;
+
+  background-color: transparent;
+  border: none;
+
+  z-index: 9999;
+}
+
+.burger-button .icon-menu {
+  display: block;
+  fill: var(--secondary-text-color);
+  transition: fill var(--retiming);
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
+}
+
+.burger-button .icon-cross {
+  display: none;
+}
+
+.burger-button.is-open .icon-cross {
+  display: block;
+  fill: var(--secondary-text-color);
+  transition: fill var(--retiming);
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
+}
+
+.burger-button.is-open .icon-menu {
+  display: none;
+}
+
+.menu-social {
+  &__items {
+  }
+  &__item {
+    display: inline-flex;
+    font-size: 18px;
+    line-height: 1.22;
+  }
+  &__link {
+    color: var(--accent-color);
+  }
+  &__span {
+    display: inline-flex;
+    align-content: center;
+
+    margin-left: 10px;
+
+    width: 1px;
+    height: 22px;
+    background-color: black;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-menu {
+    display: none;
+  }
+}
