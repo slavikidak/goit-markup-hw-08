@@ -10,4 +10,7 @@
   &__studio--inverted {
     color: var(--white-color);
   }
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+  }
 }

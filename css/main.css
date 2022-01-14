@@ -130,21 +130,44 @@ section {
   .mobile-menu.is-open .mobile-menu__container {
     top: 0;
   }
+}
+@media screen and (max-width: 767px) and (max-width: 767px) and (orientation: landscape) {
+  .mobile-menu__items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 767px) {
   .mobile-menu__item:not(:last-child) {
     margin-bottom: 32px;
   }
+}
+@media screen and (max-width: 767px) and (max-width: 767px) and (orientation: landscape) {
+  .mobile-menu__item:not(:last-child) {
+    margin-right: 20px;
+  }
+}
+@media screen and (max-width: 767px) {
   .mobile-menu__link:hover, .mobile-menu__link:focus {
     color: var(--accent-color);
   }
+}
+@media screen and (max-width: 767px) {
   .mobile-menu__phone {
     font-size: 34px;
     line-height: 1.18;
     color: var(--accent-color);
   }
+}
+@media screen and (max-width: 767px) {
   .mobile-menu__mail {
     font-size: 24px;
     line-height: 1.17;
   }
+}
+@media screen and (max-width: 767px) {
   .mobile-menu__contacts {
     position: absolute;
     top: 50%;
@@ -477,6 +500,11 @@ form > .head {
 .logo__studio--inverted {
   color: var(--white-color);
 }
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+  }
+}
 
 .button {
   display: inline-block;
@@ -556,12 +584,17 @@ form > .head {
 
 .title {
   margin-bottom: 50px;
-  font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.17;
+  font-weight: 700;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
+}
+@media screen and (min-width: 1200px) {
+  .title {
+    font-size: 36px;
+  }
 }
 
 .filter {
@@ -716,9 +749,6 @@ form > .head {
 @media screen and (min-width: 768px) {
   .contacts {
     display: block;
-    font-weight: 500;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
   }
   .contacts__link {
     display: -webkit-box;
@@ -727,13 +757,26 @@ form > .head {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    font-size: 12px;
   }
+}
+@media screen and (min-width: 768px) and (min-width: 1200px) {
+  .contacts__link {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 768px) {
   .contacts__phone-icon {
     margin-right: 10px;
     width: 10px;
     height: 16px;
     fill: currentColor;
   }
+}
+@media screen and (min-width: 768px) {
   .contacts__mail-icon {
     margin-right: 10px;
     width: 16px;
@@ -1146,6 +1189,9 @@ form > .head {
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 .portfolio__item-name {
   font-size: 18px;

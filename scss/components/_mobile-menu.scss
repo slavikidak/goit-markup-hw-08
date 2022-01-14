@@ -18,8 +18,17 @@
     &.is-open &__container {
       top: 0;
     }
+    &__items {
+      @media screen and (max-width: 767px) and (orientation: landscape) {
+        display: flex;
+        font-size: 30px;
+      }
+    }
     &__item:not(:last-child) {
       margin-bottom: 32px;
+      @media screen and (max-width: 767px) and (orientation: landscape) {
+        margin-right: 20px;
+      }
     }
     &__link:hover,
     &__link:focus {
