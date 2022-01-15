@@ -2,6 +2,7 @@
   &__list {
     display: flex;
     flex-wrap: wrap;
+    margin-top: -30px;
     margin-left: -30px;
 
     justify-content: space-evenly;
@@ -43,10 +44,5 @@
   &__icon {
     width: 106px;
     height: 60px;
-  }
-  &__title {
-    margin-bottom: 50px;
-    text-align: center;
-    color: var(--secondary-text-color);
   }
 }

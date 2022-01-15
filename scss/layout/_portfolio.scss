@@ -3,7 +3,6 @@
   padding-bottom: 94px;
   &__items {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
     margin-top: 50px;
 
@@ -11,6 +10,7 @@
     margin-left: -30px;
   }
   &__item {
+    display: flex;
     margin-top: 30px;
     margin-left: 30px;
 
@@ -44,7 +44,8 @@
     }
   }
   &__link {
-    display: block;
+    display: flex;
+    flex-direction: column;
     transition: box-shadow var(--retiming);
     &:hover,
     &:focus {
