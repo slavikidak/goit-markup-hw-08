@@ -1284,6 +1284,12 @@ form > .head {
   -o-transition: bottom var(--retiming);
   transition: bottom var(--retiming);
 }
+@media screen and (max-width: 480px) {
+  .portfolio__thumb-text {
+    padding: 15px 20px;
+    font-size: 16px;
+  }
+}
 
 .portfolio__link:hover .portfolio__thumb-text {
   bottom: 0;
